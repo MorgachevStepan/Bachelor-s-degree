@@ -1,4 +1,4 @@
-package com.stepanew.technicservice.domain;
+package com.stepanew.technicservice.domain.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "technic", uniqueConstraints = {
         @UniqueConstraint(columnNames = "licence"),
-        @UniqueConstraint(columnNames = "vinCode")
+        @UniqueConstraint(columnNames = "vin_code")
 })
 @Data
 @NoArgsConstructor
